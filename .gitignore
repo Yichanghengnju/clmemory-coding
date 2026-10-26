@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+run/
+data/
+cache/
+*.sqlite*
+*.key
+*.pem
+.env*
+embedding.local.json
+filter.local.json

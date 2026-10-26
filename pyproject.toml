@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clmemory"
+version = "1.0.0"
+description = "Attributed MemMachine event-memory adaptation for AML Textual and Coding"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+dependencies = ["fastapi>=0.115,<1", "pydantic>=2.10,<3", "uvicorn>=0.32,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "httpx>=0.27,<1"]
+
+[project.scripts]
+clmemory = "agent_memory.submission:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

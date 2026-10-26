@@ -1,0 +1,12 @@
+clmemory
+Copyright 2026 Chang-Heng Yi
+
+This is a downstream adaptation of MemMachine event-memory components.
+MemMachine is developed by the MemMachine contributors. Its native EventMemory,
+SQLite/USearch stores, BM25 and RRF components are runtime dependencies pinned to:
+https://github.com/MemMachine/MemMachine/tree/d5a39a8e774e977fb1e6c22efb03555c4e51e05e
+The upstream Apache License 2.0 is included in licenses/MemMachine-Apache-2.0.txt.
+No claim of ownership or invention is made over those upstream components.
+See THIRD_PARTY_NOTICES.md and docs/provenance.md for reuse and modifications.
+
+This Coding release reuses the shared clmemory core, commit 41ebcfb4467a037d519fa1e61a8e2a685769f195.

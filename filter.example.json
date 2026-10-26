@@ -1,0 +1,9 @@
+{
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "model": "gpt-4o-mini",
+  "api_key_file": "/absolute/private/mini.key",
+  "cache_dir": "/absolute/private/clmemory/coding/final-filter",
+  "shared_lock": "/absolute/private/clmemory/mini-shared.lock",
+  "max_calls": 200,
+  "proxy": null
+}

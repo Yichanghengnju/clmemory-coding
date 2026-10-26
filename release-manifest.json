@@ -1,0 +1,43 @@
+{
+  "system": "clmemory",
+  "repository": "clmemory-coding",
+  "release": "coding-v1.0",
+  "profiles": [
+    "v1.0-coding"
+  ],
+  "filter_revision": "final-relevance-safety-v3",
+  "shared_core_commit": "41ebcfb4467a037d519fa1e61a8e2a685769f195",
+  "files_sha256": {
+    ".gitattributes": "40e6235886c8412df544f5c7f12305abe40941b7d7b18f4c0635836774378da4",
+    ".gitignore": "d9cd11ad82b0d66a22f7bf6a01ebaa76cd28495a4dc3b599a556b7d38ee501bf",
+    "docs/provenance.md": "334d855f8fd3925b6c0676329262ae6cbc5460c59e27024ddff4a4f16582b8cb",
+    "docs/validation.md": "5b0398b9667319c922dadec7778ef5b906f03e39e7ace37c2f804849f095956d",
+    "embedding.example.json": "e7f47d50f9c45affcf22ea44f632539a80aebebfab268722151db31df84110a8",
+    "filter.example.json": "71c5663e9d06ccfc56a97b4f034e38d9a955e66387733010ea9ff8abdb8a68c1",
+    "LICENSE": "72b534383e713bd0d578bfc0d1ec35dd2c1c9a81c6fa4e651d494c9b59859d01",
+    "licenses/MemMachine-Apache-2.0.txt": "72b534383e713bd0d578bfc0d1ec35dd2c1c9a81c6fa4e651d494c9b59859d01",
+    "NOTICE": "d5496decdcdb6998adf15ae725fbc3392d19870a09d8874fb7642f0398caed19",
+    "pyproject.toml": "acb1ed76c37308afda5d7a9339d1c174309b4f848a5b0d8715abad8118b0b1f9",
+    "README.md": "6168ed5518d54803f9b27bfe6b5311a934ff85212413c97ad2d5a99be497e5f2",
+    "requirements-native.txt": "be6d2f3ee888ef66c8bc6d5c5babdfe3defb336baaa19d3e848cd958b7a872f0",
+    "source-export.json": "69c95c5009a5bb20df956aed4fb510fdd0a8f9d1c3378edb21f17c0eeaff5275",
+    "src/agent_memory/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/agent_memory/anchor_channel.py": "f6b954364b7afdfc6430a29cc1d75b413e8728157f968ef7002050525dd597fe",
+    "src/agent_memory/api.py": "d185290488325648439a73a4b8d50695dc57c3da5919c980ee7f107d9c13a85e",
+    "src/agent_memory/bailian_embeddings.py": "4aee9b102fa8b423dfc59e1b59363dcf2f753034c1243124654a33d096dcae34",
+    "src/agent_memory/delivery.py": "e91019eee67d0806c844247a3bb79345c67c490a0fc1a761d416f4dcddbc8d67",
+    "src/agent_memory/domain.py": "2c53c679f99da86e89158add1e9ee6dc2c66bab3683d1935e12c9ab239d749b4",
+    "src/agent_memory/evidence_tracing.py": "67649a69d8d248829235a698650e9ef007532892ad2fa74fd9a427231c2809e3",
+    "src/agent_memory/final_filter.py": "6eb59f82509a0a8a974ea47c663a98c862dd6121a53b10d505d241508d5a055c",
+    "src/agent_memory/lexical.py": "3695d4b8dffe451f75bf6fdaf8915fee0077b6997ef209d623cf94b340561a37",
+    "src/agent_memory/memory.py": "c4407c07b302698b09580761e330217d7b4e1c14552753367dfdc7b58c569963",
+    "src/agent_memory/method_memmachine.py": "e2ec1e355819a161fbbb9f9ca972558a07058d36cb96155e75391c7ea214d207",
+    "src/agent_memory/method_store.py": "42eb75d3610eaa65e76bca4e39420a6a5c45d986b8751e90a43763b5350d5ef5",
+    "src/agent_memory/storage.py": "715c0ee49bbd097338672d4f89b892356e1395e1c28991c106f2bf3bceb83111",
+    "src/agent_memory/submission.py": "b790cbd901c889665b836ec0c71cc41ae001942f56ae6e4ce0278353b79eed88",
+    "src/agent_memory/tasks.py": "530210e41e701faa51fef51b4973873dc5e4db190ecbd8fc07321a9eafd822da",
+    "tests/test_final_filter.py": "cbe4806726d4d830c87220762be52b93e572c87695be5f81e30a67039569aecd",
+    "tests/test_submission.py": "0a48694f8322cff36d20bcb9138f3bf2de9a24e73c7319c36a285d0964210384",
+    "THIRD_PARTY_NOTICES.md": "26648c44ab424219ad9a98d53f3503e3b0f14ac7c2ac829190548cddc94b5172"
+  }
+}

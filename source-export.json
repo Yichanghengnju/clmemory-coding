@@ -1,0 +1,23 @@
+{
+  "schema": "clmemory-public-source-export-v1",
+  "date": "2026-10-26",
+  "description": "Allowlisted in-house adapters; no research data or experimental results included",
+  "files_sha256": {
+    "src/agent_memory/domain.py": "2c53c679f99da86e89158add1e9ee6dc2c66bab3683d1935e12c9ab239d749b4",
+    "src/agent_memory/lexical.py": "3695d4b8dffe451f75bf6fdaf8915fee0077b6997ef209d623cf94b340561a37",
+    "src/agent_memory/memory.py": "c4407c07b302698b09580761e330217d7b4e1c14552753367dfdc7b58c569963",
+    "src/agent_memory/storage.py": "715c0ee49bbd097338672d4f89b892356e1395e1c28991c106f2bf3bceb83111",
+    "src/agent_memory/method_store.py": "42eb75d3610eaa65e76bca4e39420a6a5c45d986b8751e90a43763b5350d5ef5",
+    "src/agent_memory/method_memmachine.py": "e2ec1e355819a161fbbb9f9ca972558a07058d36cb96155e75391c7ea214d207",
+    "src/agent_memory/anchor_channel.py": "f6b954364b7afdfc6430a29cc1d75b413e8728157f968ef7002050525dd597fe",
+    "src/agent_memory/bailian_embeddings.py": "4aee9b102fa8b423dfc59e1b59363dcf2f753034c1243124654a33d096dcae34",
+    "src/agent_memory/tasks.py": "530210e41e701faa51fef51b4973873dc5e4db190ecbd8fc07321a9eafd822da",
+    "src/agent_memory/evidence_tracing.py": "67649a69d8d248829235a698650e9ef007532892ad2fa74fd9a427231c2809e3",
+    "src/agent_memory/api.py": "d185290488325648439a73a4b8d50695dc57c3da5919c980ee7f107d9c13a85e"
+  },
+  "upstream_runtime": {
+    "repository": "https://github.com/MemMachine/MemMachine",
+    "commit": "d5a39a8e774e977fb1e6c22efb03555c4e51e05e",
+    "license": "Apache-2.0"
+  }
+}

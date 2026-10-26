@@ -1,0 +1,9 @@
+{
+  "provider": "bailian",
+  "model": "text-embedding-v4",
+  "endpoint": "https://YOUR-WORKSPACE.cn-beijing.maas.aliyuncs.com/api/v1/services/embeddings/text-embedding/text-embedding",
+  "dimensions": 1024,
+  "api_key_file": "/absolute/private/dashscope.key",
+  "cache_dir": "/absolute/private/clmemory/coding/embedding-cache",
+  "proxy": null
+}

@@ -1,0 +1,2 @@
+# Runtime fingerprints and provenance are byte-based; preserve exported bytes.
+* -text

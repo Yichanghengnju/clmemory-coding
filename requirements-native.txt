@@ -1,0 +1,3 @@
+# Native MemMachine runtime, used directly (Apache-2.0), fixed upstream version.
+memmachine-common @ git+https://github.com/MemMachine/MemMachine.git@d5a39a8e774e977fb1e6c22efb03555c4e51e05e#subdirectory=packages/common
+memmachine-server @ git+https://github.com/MemMachine/MemMachine.git@d5a39a8e774e977fb1e6c22efb03555c4e51e05e#subdirectory=packages/server
