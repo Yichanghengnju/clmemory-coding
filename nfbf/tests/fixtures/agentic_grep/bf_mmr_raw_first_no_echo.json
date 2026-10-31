@@ -1,0 +1,174 @@
+{
+  "id": "bf-mmr-raw-first-no-echo",
+  "purpose": "BF MMR+raw-first: repeated near-duplicate windows must not fill top_k; provenance+raw body only",
+  "kernel": "coding-raw-bm25-v1",
+  "config": "configs/coding-submit-nf-bf-v0.json",
+  "enable_agentic_grep": true,
+  "constraints": [
+    "do-not-rerun official-smoke-20261028-r1",
+    "no Full",
+    "zero generative LLM / embedding for this local smoke"
+  ],
+  "adds": [
+    {
+      "request_id": "req-seed",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "user",
+          "content": "BUG traceback ValueError FAILED in src/parse.py: strip needed",
+          "timestamp": 0
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-1",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#1",
+          "timestamp": 1
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-2",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#2",
+          "timestamp": 2
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-3",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#3",
+          "timestamp": 3
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-4",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#4",
+          "timestamp": 4
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-5",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#5",
+          "timestamp": 5
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-6",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#6",
+          "timestamp": 6
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-7",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#7",
+          "timestamp": 7
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-8",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#8",
+          "timestamp": 8
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-9",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#9",
+          "timestamp": 9
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-10",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#10",
+          "timestamp": 10
+        }
+      ]
+    },
+    {
+      "request_id": "req-echo-11",
+      "user_id": "synthetic:bf-mmr",
+      "session_id": "sess-mmr-1",
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Fixed parseConfig strip BOM before json load; tests PASSED for UTF-8 BOM case. repeat#11",
+          "timestamp": 11
+        }
+      ]
+    }
+  ],
+  "search": {
+    "user_id": "synthetic:bf-mmr",
+    "query": "traceback ValueError BOM fix",
+    "top_k": 8
+  },
+  "expect": {
+    "any_content_substrings": [
+      "ValueError",
+      "strip BOM",
+      "PASSED"
+    ],
+    "top_hit_must_not_contain": "MemoryCard",
+    "min_hits": 1,
+    "top_k_cap": 3,
+    "raw_first": true
+  }
+}

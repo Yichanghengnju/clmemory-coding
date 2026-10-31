@@ -1,0 +1,10 @@
+{
+  "id": "user-isolation-idempotent-409-stub",
+  "purpose": "STUB: user isolation + Add idempotent / 409 conflict",
+  "status": "stub",
+  "expect": {
+    "isolated_other_user_empty": true,
+    "idempotent_same_payload": 200,
+    "conflict_changed_payload": 409
+  }
+}

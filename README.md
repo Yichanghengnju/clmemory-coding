@@ -97,3 +97,14 @@ The platform controls source chunking, answering and scoring. There are no
 benchmark data, labels, judge prompts, research runners, or private logs here.
 
 Contact: Chang-Heng Yi, Nanjing University / Cllab. Apache-2.0; see LICENSE and NOTICE.
+
+
+## nfbf submission recipes (v0)
+
+The current smoke-passed submission recipes live in [`nfbf/`](nfbf/README.md):
+a self-contained nf/bf blend search package (agentic grep, guarded dense-RRF
+channel, verbatim-source delivery) with both submit configs and unit tests.
+Version selection (2026-10-31, pre-registered paired panel over a frozen
+314-case retrieval set): dense channel −0.96pp hit@10 — **nfbf-agentic is the
+recommended submission face**; the dense variant is published as the guarded
+optional channel. File hashes in `source-export-nfbf.json`.

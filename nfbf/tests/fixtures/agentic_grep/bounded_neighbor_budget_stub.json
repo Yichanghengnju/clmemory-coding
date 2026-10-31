@@ -1,0 +1,10 @@
+{
+  "id": "bounded-neighbor-budget-stub",
+  "purpose": "STUB: neighbor_budget<=8 and max_result_chars; seed preferred",
+  "status": "stub",
+  "expect": {
+    "neighbor_budget": 8,
+    "max_result_chars_key": "max_result_chars",
+    "seed_priority": true
+  }
+}

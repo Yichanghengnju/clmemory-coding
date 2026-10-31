@@ -1,0 +1,16 @@
+{
+  "suite": "agentic-grep-local-fixtures-20261029",
+  "kernel": "coding-raw-bm25-v1",
+  "config": "configs/coding-submit-nf-bf-v0.json",
+  "enable_agentic_grep_default": true,
+  "forbid": [
+    "official-smoke-20261028-r1",
+    "Full"
+  ],
+  "cases": [
+    "bf_cross_request_neighbor_chain.json",
+    "nf_exportReport_prefix_variants.json",
+    "bounded_neighbor_budget_stub.json",
+    "user_isolation_idempotent_409_stub.json"
+  ]
+}

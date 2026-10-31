@@ -1,0 +1,28 @@
+{
+  "schema": "clmemory-public-source-export-nfbf-v1",
+  "date": "2026-10-31",
+  "description": "Verbatim nfbf submission recipes; api_key_file scrubbed to placeholder in configs; no research data or credentials",
+  "files_sha256": {
+    "nfbf/coding_memory/__init__.py": "2be1611b4e9296c1652b2c5e86a611e755ed8f5ac828cdcdb6b3a0e834c0d870",
+    "nfbf/coding_memory/bailian_embed.py": "5cec2c8ea340bded076fb14b0a3124c3fc6d61bde2510875dec26bd0d16e9ab1",
+    "nfbf/coding_memory/core.py": "118c77257a92318bf7d562309eeb8724ca548d0b99e3398b0010d86168ef8c75",
+    "nfbf/coding_memory/dense_rrf.py": "851e8c42a514223fda2ab2c802d43802b005fb907eb64d3cda2a9820fee4f2f4",
+    "nfbf/configs/coding-submit-dense-v0.json": "0fcf5c83ef3d7dbfb3d8cd925d403c5802e57360bc488c883131fd7a23935b6c",
+    "nfbf/configs/coding-submit-nf-bf-v0.json": "fc7eb0908ca6ab927ac7f92e2f0bae36f6d6294c0e79dd7cb4175d28360c38ea",
+    "nfbf/README.md": "512d7ef595ad217318a109ab32c69e68cf26440f80a20352cee591cd7e9a7a23",
+    "nfbf/tests/fixtures/agentic_grep/bf_cross_request_neighbor_chain.json": "ce8716f9c420ab957f0e0bdce8d84fa1358f0d979f63da9f343eaed0841cf3be",
+    "nfbf/tests/fixtures/agentic_grep/bf_mmr_raw_first_no_echo.json": "7867de737589f17ed388005fb201ca217d964bd295d3dad73cd8c1ee743a4ac2",
+    "nfbf/tests/fixtures/agentic_grep/bounded_neighbor_budget_stub.json": "d947d05cc415f84231962218654834f587252ad8641aaebd96b697d5131ef8b1",
+    "nfbf/tests/fixtures/agentic_grep/manifest.json": "f4eaa67974419f9b716503d73ac3870a2e3dfecccdb89123034785e5d09afac2",
+    "nfbf/tests/fixtures/agentic_grep/nf_exportReport_prefix_variants.json": "2e0962cca75574011ea6e4e810e249bb8ff91d291a0f7a35c0b83340890a5b98",
+    "nfbf/tests/fixtures/agentic_grep/user_isolation_idempotent_409_stub.json": "c5fed8cfbc934e89025d26598ea440d7fedcfa821d69166b384bfdda45d865f4",
+    "nfbf/tests/test_agentic_grep.py": "bd446f80eb17ff19c99ee07ebf76b32c12d2d0ac27141068f716934945296a8e",
+    "nfbf/tests/test_dense_fallback.py": "0eaaabefcc359397cbd25b74e027e7a6173182b27aba93a0d718a2f5ab9f691e",
+    "nfbf/tests/test_dense_rrf.py": "dfa012e6b638babc3a4a4206d1d7d8eda0b26ecb049c2b1c4211039e6dcad0ca",
+    "nfbf/tests/test_service.py": "8a7b55ce7e3c6ec20b07411304acea58c4363f4abad97974e99a728030321687"
+  },
+  "provenance": {
+    "note": "internal pre-scrub hashes of the two configs differ only in embedding_api_key_file",
+    "internal_core_sha256": "118c77257a92318bf7d562309eeb8724ca548d0b99e3398b0010d86168ef8c75"
+  }
+}

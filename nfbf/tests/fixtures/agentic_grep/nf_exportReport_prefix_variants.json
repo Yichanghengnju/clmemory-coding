@@ -1,0 +1,54 @@
+{
+  "id": "nf-exportReport-prefix-variants",
+  "purpose": "NF: query exportReport must retrieve exportReporter / export_report via prefix soft-hit (+ agentic path on)",
+  "kernel": "coding-raw-bm25-v1",
+  "config": "configs/coding-submit-nf-bf-v0.json",
+  "enable_agentic_grep": true,
+  "constraints": [
+    "do-not-rerun official-smoke-20261028-r1",
+    "no Full",
+    "zero generative LLM / embedding for this local smoke"
+  ],
+  "adds": [
+    {
+      "request_id": "feat-1",
+      "user_id": "synthetic:nf-export",
+      "session_id": "sess-nf",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please implement exportReporter to write CSV rows for the monthly dashboard export_report pipeline.",
+          "timestamp": 10
+        }
+      ]
+    },
+    {
+      "request_id": "noise-1",
+      "user_id": "synthetic:nf-export",
+      "session_id": "sess-nf",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Change button color to blue in the settings modal.",
+          "timestamp": 11
+        }
+      ]
+    }
+  ],
+  "search": {
+    "user_id": "synthetic:nf-export",
+    "query": "exportReport",
+    "top_k": 5,
+    "options": [
+      "CSV"
+    ]
+  },
+  "expect": {
+    "any_content_substrings": [
+      "exportReporter",
+      "export_report"
+    ],
+    "min_hits": 1,
+    "top_k_cap": 5
+  }
+}
